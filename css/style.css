@@ -11,8 +11,9 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     align-content: center;
-    border: 1px solid gray;
+    border: 0px solid gray;
      counter-reset: list;
+    box-shadow: 1px 1px 1px 1px #ccc;
 }
 
 .small-container{
@@ -112,12 +113,11 @@ p {
   padding-top: 60px;
 }
 header{
-    background-color: gainsboro;
+    background-color: white;
     height:auto;
     width: auto;
 }
 .header1{
-    background-color: aliceblue;
     height: 200px;
     width: auto;
     margin-top: 1px;
@@ -159,8 +159,8 @@ footer{
     width: auto;
     height: auto;
     margin: 2px;
-    border: 1px solid black;
-    background-color:gainsboro;
+    border: 0px solid black;
+    background-color:white;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -170,7 +170,8 @@ footer{
     width: 32%;
     height: 400px;
     margin-left: 8px;
-    border: 1px solid green;
+    border: 1px solid gray;
     background-color: white;
     position: relative;
+    box-shadow: 1px 1px 1px 1px #ccc;
 }
