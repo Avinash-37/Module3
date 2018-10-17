@@ -121,7 +121,7 @@ header{
     height: 200px;
     width: auto;
     margin-top: 1px;
-    background-image: url("../header.jpeg");
+    background-image: url("../image/header.jpeg");
     background-repeat: repeat;
     margin-bottom: 1px;
 }
