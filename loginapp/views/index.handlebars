@@ -1,0 +1,42 @@
+ <h2 class="page-header">Your To do</h2>
+<p>Welcome to your dashboard</p>
+<div class="container">
+	<div class="row">
+        <div class="col-xs-12 col-sm-12 col-xd-12 col-lg-12">
+		<div id="myTodolist" class="small-container">
+			<h1>To Do List</h1>
+			<form action="/users/tododata" method="post">		
+            			<input type="text" id="myInput" name="myInput" class="login-input" placeholder="Add list" required>
+					<span ><button type="submit" name="submit" class="addButton" >Add</button></span><br />
+            				</form><br>
+
+				<h2>List</h2>
+				<ul id="myTodayList">
+				<li>Avinash meshram</li>
+					</ul>
+				<br>
+				<button id="clearDiv" class="btn btn-danger btn-lg">Clear All</button><br /><br/>
+			
+		</div>
+    	</div>
+ 	</div>
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-xd-12 col-lg-12">
+			<div class="small-container"><h2>To Do List</h2><br/>
+				<div class="flex-container">
+<form action="/users/todo" method="get">		
+				<button type="submit name="submit" class="btn btn-danger btn-block" >show</button><br />
+            				</form>
+<form action="/users/todo" method="get">		
+				<button type="submit name="submit" class="btn btn-success btn-block" >show</button><br />
+            				</form>
+		<form action="/users/todo" method="get">		
+				<button type="submit name="submit" class="btn btn-info btn-block" >show</button><br />
+            				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+

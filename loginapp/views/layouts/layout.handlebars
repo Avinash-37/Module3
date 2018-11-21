@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo Login</title>
+	<link rel="stylesheet" href="/css/bootstrap.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            {{#if user}}
+	      <li><i class="fa fa-user-circle" aria-hidden="true"></i>
+		<h4>{{user.name}}</h4></li>
+	      <li></br></li>
+              <li role="presentation"><a href="/">Dashboard</a></li>
+              <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{else}}
+              <li role="presentation"><a href="/users/login">Login</a></li>
+              <li role="presentation"><a href="/users/register">Register</a></li>
+            {{/if}}
+          </ul>
+        </nav>
+        <h3 class="text-muted">Human Cloud Business Solution</h3>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          {{#if success_msg}}
+            <div class="alert alert-success">{{success_msg}}</div>
+          {{/if}}
+
+          {{#if error_msg}}
+            <div class="alert alert-danger">{{error_msg}}</div>
+          {{/if}}
+
+          {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+          {{/if}}
+          
+          {{{body}}}
+        </div>
+
+        
+      </div>
+	<div class="row">
+		<div class="col-lg-12">
+		{{#if user}}
+		<h2>{{ user}}</h2>
+		{{/if}}
+		
+		{{#if mail}}
+		<h2>{{ mail}}</h2>
+		{{/if}}
+		</div>
+	</div>
+	</br></br>
+      <footer class="footer">
+        <p>&copy; 2018 , Human Cloud Business Solution.</p>
+      </footer>
+	
+    </div> <!-- /container -->
+</body>
+</html>
