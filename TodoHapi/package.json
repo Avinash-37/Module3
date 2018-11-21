@@ -1,0 +1,16 @@
+{
+  "name": "todohapi",
+  "version": "1.0.0",
+  "description": "This is todoapi in hapi js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avinash Meshram",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.7.0",
+    "mongoose": "^5.3.12",
+    "nodemon": "^1.18.6"
+  }
+}
